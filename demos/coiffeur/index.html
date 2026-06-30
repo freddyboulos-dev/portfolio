@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Élise — Salon de Coiffure</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="logo">Studio <em>Élise</em></div>
+    <ul class="nav-links">
+      <li><a href="#prestations">Prestations</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#reservation">Réservation</a></li>
+    </ul>
+    <a href="#reservation" class="btn-nav">Prendre RDV</a>
+    <button class="burger" id="burger">☰</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg-text">BEAUTÉ</div>
+    <div class="hero-content">
+      <div class="hero-visual">
+        <svg viewBox="0 0 340 420" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="halo" cx="50%" cy="40%" r="50%">
+              <stop offset="0%" stop-color="#c084fc" stop-opacity="0.2"/>
+              <stop offset="100%" stop-color="#1a0a2e" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="340" height="420" fill="#1a0a2e"/>
+          <rect width="340" height="420" fill="url(#halo)"/>
+          <!-- Mirror frame -->
+          <ellipse cx="170" cy="180" rx="110" ry="140" fill="none" stroke="#c084fc" stroke-width="2" opacity="0.6"/>
+          <ellipse cx="170" cy="180" rx="104" ry="134" fill="none" stroke="#c084fc" stroke-width="0.5" opacity="0.3"/>
+          <!-- Mirror reflection / face silhouette -->
+          <ellipse cx="170" cy="155" rx="55" ry="65" fill="#2a1545" stroke="#c084fc" stroke-width="0.5" opacity="0.4"/>
+          <!-- Hair -->
+          <path d="M 120 140 Q 100 90 130 75 Q 170 60 210 75 Q 240 90 220 140" fill="#3d1f5f" opacity="0.8"/>
+          <path d="M 118 145 Q 105 180 115 220" stroke="#3d1f5f" stroke-width="18" stroke-linecap="round" fill="none"/>
+          <path d="M 222 145 Q 235 180 225 220" stroke="#3d1f5f" stroke-width="18" stroke-linecap="round" fill="none"/>
+          <!-- Scissors decorative -->
+          <g transform="translate(260, 50)" opacity="0.7">
+            <circle cx="12" cy="14" r="7" fill="none" stroke="#c084fc" stroke-width="1.5"/>
+            <circle cx="28" cy="14" r="7" fill="none" stroke="#c084fc" stroke-width="1.5"/>
+            <line x1="17" y1="20" x2="28" y2="38" stroke="#c084fc" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="23" y1="20" x2="12" y2="38" stroke="#c084fc" stroke-width="1.5" stroke-linecap="round"/>
+          </g>
+          <!-- Decorative dots -->
+          <circle cx="60" cy="80" r="2" fill="#c084fc" opacity="0.5"/>
+          <circle cx="290" cy="120" r="1.5" fill="#c084fc" opacity="0.4"/>
+          <circle cx="40" cy="280" r="1" fill="#f0e6ff" opacity="0.4"/>
+          <circle cx="300" cy="300" r="2" fill="#c084fc" opacity="0.3"/>
+          <!-- Stand du miroir -->
+          <rect x="155" y="318" width="30" height="60" rx="6" fill="#2a1545"/>
+          <rect x="120" y="375" width="100" height="12" rx="6" fill="#2a1545"/>
+          <!-- Stars/sparkles -->
+          <text x="55" y="200" font-size="12" fill="#c084fc" opacity="0.5">✦</text>
+          <text x="280" y="240" font-size="10" fill="#c084fc" opacity="0.4">✦</text>
+          <text x="140" y="350" font-size="8" fill="#c084fc" opacity="0.3">✦</text>
+        </svg>
+      </div>
+      <div class="hero-text">
+        <div class="hero-tag">Salon de coiffure haut de gamme</div>
+        <h1>L'art de sublimer <em>votre beauté.</em></h1>
+        <p>Coupes créatives, colorations naturelles, soins capillaires d'exception. Studio Élise vous accueille dans un espace dédié à votre bien-être.</p>
+        <div class="hero-actions">
+          <a href="#reservation" class="btn-primary">Réserver maintenant</a>
+          <a href="#prestations" class="btn-ghost">Voir les prestations</a>
+        </div>
+        <div class="hero-badges">
+          <div class="hbadge">⭐⭐⭐⭐⭐ <span>4.9/5 sur Google</span></div>
+          <div class="hbadge">💜 <span>+200 clientes fidèles</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESTATIONS -->
+  <section class="prestations" id="prestations">
+    <div class="section-header">
+      <div class="label">Nos prestations</div>
+      <h2>Ce que nous <em>faisons de mieux.</em></h2>
+    </div>
+    <div class="presta-grid">
+      <div class="presta-card">
+        <div class="presta-icon">✂️</div>
+        <h3>Coupe & Brushing</h3>
+        <p>Coupe personnalisée selon la morphologie du visage, brushing volume ou lissage.</p>
+        <div class="presta-from">À partir de 35€</div>
+      </div>
+      <div class="presta-card featured">
+        <div class="presta-icon">🎨</div>
+        <h3>Coloration</h3>
+        <p>Balayage, mèches, couleur totale. Produits Kérastase sans ammoniaque disponibles.</p>
+        <div class="presta-from light">À partir de 55€</div>
+      </div>
+      <div class="presta-card">
+        <div class="presta-icon">✨</div>
+        <h3>Soins capillaires</h3>
+        <p>Masques restructurants, lissage brésilien, botox capillaire. Cheveux transformés.</p>
+        <div class="presta-from">À partir de 45€</div>
+      </div>
+      <div class="presta-card">
+        <div class="presta-icon">👰</div>
+        <h3>Coiffure mariée</h3>
+        <p>Chignon, tresses, ondulations. Essai inclus. Déplacement possible sur demande.</p>
+        <div class="presta-from">Sur devis</div>
+      </div>
+      <div class="presta-card">
+        <div class="presta-icon">🌿</div>
+        <h3>Coloration végétale</h3>
+        <p>Henné, plantes colorantes naturelles. Idéal pour les peaux sensibles et les grossesses.</p>
+        <div class="presta-from">À partir de 65€</div>
+      </div>
+      <div class="presta-card">
+        <div class="presta-icon">💆</div>
+        <h3>Soin & Massage crânien</h3>
+        <p>Shampooing thérapeutique, massage du cuir chevelu, enveloppement nourrissant.</p>
+        <div class="presta-from">À partir de 25€</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="galerie" id="galerie">
+    <div class="section-header">
+      <div class="label">Galerie</div>
+      <h2>Nos <em>réalisations.</em></h2>
+    </div>
+    <div class="galerie-grid">
+      <div class="galerie-item tall">
+        <svg viewBox="0 0 200 320" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="320" fill="#2a1545"/>
+          <ellipse cx="100" cy="120" rx="50" ry="60" fill="#3d1f5f"/>
+          <path d="M 55 130 Q 30 200 50 280" stroke="#4a2570" stroke-width="25" stroke-linecap="round" fill="none"/>
+          <path d="M 145 130 Q 170 200 150 280" stroke="#4a2570" stroke-width="25" stroke-linecap="round" fill="none"/>
+          <path d="M 55 130 Q 80 80 100 75 Q 120 80 145 130" fill="#3d1f5f"/>
+          <text x="100" y="300" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#c084fc" opacity="0.6">Balayage doré</text>
+        </svg>
+      </div>
+      <div class="galerie-item">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="200" fill="#200d38"/>
+          <ellipse cx="100" cy="80" rx="45" ry="52" fill="#2d1448"/>
+          <path d="M 58 90 Q 40 130 55 190" stroke="#5a2d8a" stroke-width="20" fill="none" stroke-linecap="round"/>
+          <path d="M 142 90 Q 160 130 145 190" stroke="#5a2d8a" stroke-width="20" fill="none" stroke-linecap="round"/>
+          <path d="M 58 90 Q 100 55 142 90" fill="#2d1448"/>
+          <text x="100" y="185" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#c084fc" opacity="0.6">Coupe carrée</text>
+        </svg>
+      </div>
+      <div class="galerie-item">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="200" fill="#1e0d30"/>
+          <ellipse cx="100" cy="80" rx="44" ry="52" fill="#2d1448"/>
+          <!-- Highlights/balayage effect -->
+          <path d="M 62 70 Q 80 40 100 35 Q 120 40 138 70" fill="#4a2060"/>
+          <path d="M 70 65 L 75 110 Q 78 120 80 130" stroke="#c084fc" stroke-width="3" fill="none" opacity="0.4" stroke-linecap="round"/>
+          <path d="M 90 60 L 92 115 Q 94 125 95 135" stroke="#c084fc" stroke-width="2.5" fill="none" opacity="0.35" stroke-linecap="round"/>
+          <path d="M 110 60 L 108 115 Q 106 125 105 135" stroke="#c084fc" stroke-width="2.5" fill="none" opacity="0.35" stroke-linecap="round"/>
+          <path d="M 130 65 L 125 110 Q 122 120 120 130" stroke="#c084fc" stroke-width="3" fill="none" opacity="0.4" stroke-linecap="round"/>
+          <text x="100" y="185" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#c084fc" opacity="0.6">Mèches violettes</text>
+        </svg>
+      </div>
+      <div class="galerie-item wide">
+        <svg viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="420" height="200" fill="#180a28"/>
+          <!-- Chignon stylisé -->
+          <circle cx="210" cy="80" r="50" fill="#2d1448"/>
+          <ellipse cx="210" cy="60" rx="36" ry="28" fill="#3d1a5a"/>
+          <!-- Chignon knot -->
+          <circle cx="210" cy="48" r="20" fill="#4a2070"/>
+          <path d="M 192 48 Q 210 38 228 48 Q 218 58 210 55 Q 202 58 192 48" fill="#5a2888" opacity="0.7"/>
+          <!-- Hair pins -->
+          <line x1="195" y1="60" x2="190" y2="40" stroke="#c084fc" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+          <line x1="225" y1="60" x2="230" y2="40" stroke="#c084fc" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+          <text x="210" y="185" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#c084fc" opacity="0.6">Chignon de mariée</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section class="reservation" id="reservation">
+    <div class="resa-inner">
+      <div class="resa-info">
+        <div class="label">Réservation</div>
+        <h2>Prenez <em>rendez-vous.</em></h2>
+        <p>Choisissez votre créneau et votre prestation. Confirmation par SMS sous 2h.</p>
+        <div class="resa-contact">
+          <a href="tel:0232000000" class="contact-line">
+            <span class="icon">📞</span>
+            <div><div class="clabel">Téléphone</div><div>02 32 XX XX XX</div></div>
+          </a>
+          <a href="mailto:studio.elise@exemple.fr" class="contact-line">
+            <span class="icon">📧</span>
+            <div><div class="clabel">Email</div><div>studio.elise@exemple.fr</div></div>
+          </a>
+          <div class="contact-line">
+            <span class="icon">📍</span>
+            <div><div class="clabel">Adresse</div><div>14 Rue des Fleurs, 27000 Évreux</div></div>
+          </div>
+          <div class="contact-line">
+            <span class="icon">🕐</span>
+            <div><div class="clabel">Horaires</div><div>Mar–Sam : 9h – 19h</div></div>
+          </div>
+        </div>
+      </div>
+      <form class="resa-form" onsubmit="handleSubmit(event)">
+        <h3>Demande de rendez-vous</h3>
+        <div class="form-group">
+          <label>Votre prénom</label>
+          <input type="text" placeholder="Sophie" required>
+        </div>
+        <div class="form-group">
+          <label>Téléphone</label>
+          <input type="tel" placeholder="06 XX XX XX XX" required>
+        </div>
+        <div class="form-group">
+          <label>Prestation souhaitée</label>
+          <select>
+            <option>Coupe & Brushing</option>
+            <option>Coloration</option>
+            <option>Balayage / Mèches</option>
+            <option>Soin capillaire</option>
+            <option>Coiffure mariée</option>
+            <option>Coloration végétale</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Date souhaitée</label>
+            <input type="date">
+          </div>
+          <div class="form-group">
+            <label>Heure préférée</label>
+            <select>
+              <option>9h00</option><option>10h00</option><option>11h00</option>
+              <option>14h00</option><option>15h00</option><option>16h00</option><option>17h00</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Message (optionnel)</label>
+          <textarea placeholder="Précisions sur votre demande..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary full">Envoyer ma demande 💜</button>
+        <div class="form-success" id="success">✅ Demande envoyée ! Vous serez contacté(e) sous 2h.</div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>Studio Élise — Salon de coiffure, Évreux</div>
+    <div class="footer-sub">Site réalisé par Freddy Boulos — Développeur Web</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

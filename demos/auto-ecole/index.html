@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto École Liberté — Évreux</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="logo">
+      <svg width="32" height="32" viewBox="0 0 32 32">
+        <circle cx="16" cy="16" r="15" fill="none" stroke="#e8c44a" stroke-width="2"/>
+        <path d="M8 20 L12 12 L16 18 L20 12 L24 20" stroke="#e8c44a" stroke-width="2" fill="none" stroke-linejoin="round"/>
+      </svg>
+      <span>Auto École <strong>Liberté</strong></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#formations">Formations</a></li>
+      <li><a href="#tarifs">Tarifs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-nav">Prendre RDV</a>
+    <button class="burger" id="burger">☰</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="badge">🏆 Agréé Permis à 1€/jour</div>
+      <h1>Votre permis,<br><span>en toute confiance.</span></h1>
+      <p>Auto École Liberté vous accompagne de A à Z pour obtenir votre permis dans les meilleures conditions. Moniteurs diplômés, pédagogie bienveillante.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">Demander un devis</a>
+        <a href="#formations" class="btn-outline">Nos formations</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="num">94%</span><span class="lbl">Taux de réussite</span></div>
+        <div class="divider"></div>
+        <div class="stat"><span class="num">+500</span><span class="lbl">Élèves formés</span></div>
+        <div class="divider"></div>
+        <div class="stat"><span class="num">15 ans</span><span class="lbl">D'expérience</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg viewBox="0 0 420 280" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#e8c44a" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#0a1628" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="420" height="280" fill="#0a1628"/>
+        <rect width="420" height="280" fill="url(#glow)"/>
+        <!-- Route -->
+        <rect x="0" y="200" width="420" height="80" fill="#1a2a1a"/>
+        <rect x="0" y="196" width="420" height="6" fill="#2a3a2a"/>
+        <rect x="40" y="230" width="60" height="8" rx="4" fill="#e8c44a" opacity="0.7"/>
+        <rect x="140" y="230" width="60" height="8" rx="4" fill="#e8c44a" opacity="0.7"/>
+        <rect x="240" y="230" width="60" height="8" rx="4" fill="#e8c44a" opacity="0.7"/>
+        <rect x="340" y="230" width="60" height="8" rx="4" fill="#e8c44a" opacity="0.7"/>
+        <!-- Car body -->
+        <g transform="translate(100, 130)">
+          <rect x="0" y="40" width="220" height="60" rx="8" fill="#1e3a5f"/>
+          <rect x="30" y="15" width="160" height="50" rx="14" fill="#1a3358"/>
+          <!-- Windows -->
+          <rect x="42" y="20" width="55" height="36" rx="6" fill="#a8d4f5" opacity="0.6"/>
+          <rect x="105" y="20" width="55" height="36" rx="6" fill="#a8d4f5" opacity="0.55"/>
+          <!-- Wheels -->
+          <circle cx="52" cy="100" r="22" fill="#111" stroke="#e8c44a" stroke-width="3"/>
+          <circle cx="52" cy="100" r="10" fill="#333" stroke="#555" stroke-width="2"/>
+          <circle cx="168" cy="100" r="22" fill="#111" stroke="#e8c44a" stroke-width="3"/>
+          <circle cx="168" cy="100" r="10" fill="#333" stroke="#555" stroke-width="2"/>
+          <!-- Headlights -->
+          <rect x="-8" y="52" width="18" height="10" rx="5" fill="#f5f5a0" opacity="0.9"/>
+          <rect x="210" y="52" width="18" height="10" rx="5" fill="#ff6060" opacity="0.7"/>
+          <!-- Stripe -->
+          <rect x="0" y="62" width="220" height="4" fill="#e8c44a" opacity="0.6"/>
+        </g>
+        <!-- Stars -->
+        <circle cx="50" cy="60" r="1.5" fill="white" opacity="0.6"/>
+        <circle cx="180" cy="40" r="1" fill="white" opacity="0.4"/>
+        <circle cx="350" cy="80" r="2" fill="#e8c44a" opacity="0.5"/>
+        <circle cx="390" cy="30" r="1.5" fill="white" opacity="0.5"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="formations" id="formations">
+    <div class="section-header">
+      <div class="label">Nos formations</div>
+      <h2>Tous les permis, <span>une seule école.</span></h2>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 48 48" fill="none">
+            <rect x="4" y="16" width="40" height="24" rx="4" stroke="#e8c44a" stroke-width="2"/>
+            <rect x="12" y="8" width="24" height="12" rx="6" stroke="#e8c44a" stroke-width="2"/>
+            <circle cx="14" cy="40" r="4" stroke="#e8c44a" stroke-width="2"/>
+            <circle cx="34" cy="40" r="4" stroke="#e8c44a" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>Permis B</h3>
+        <p>Voiture manuelle et automatique. Formation classique, accélérée ou conduite accompagnée dès 15 ans.</p>
+        <div class="card-tag">Le plus demandé</div>
+      </div>
+      <div class="card featured">
+        <div class="card-icon">
+          <svg viewBox="0 0 48 48" fill="none">
+            <ellipse cx="24" cy="28" rx="16" ry="10" stroke="#0a1628" stroke-width="2"/>
+            <circle cx="12" cy="34" r="4" stroke="#0a1628" stroke-width="2"/>
+            <circle cx="36" cy="34" r="4" stroke="#0a1628" stroke-width="2"/>
+            <path d="M18 18 L24 8 L30 18" stroke="#0a1628" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+        <h3>Permis Moto</h3>
+        <p>A1, A2 et A. Formation progressive avec simulateur. Brevetage et formation passerelle disponibles.</p>
+        <div class="card-tag dark">Populaire</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 48 48" fill="none">
+            <rect x="6" y="18" width="36" height="18" rx="3" stroke="#e8c44a" stroke-width="2"/>
+            <rect x="16" y="10" width="16" height="12" rx="3" stroke="#e8c44a" stroke-width="2"/>
+            <circle cx="14" cy="36" r="4" stroke="#e8c44a" stroke-width="2"/>
+            <circle cx="34" cy="36" r="4" stroke="#e8c44a" stroke-width="2"/>
+            <rect x="36" y="22" width="8" height="8" rx="2" stroke="#e8c44a" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>Permis BE & Remorque</h3>
+        <p>Conduite avec remorque ou caravane. Formation de 7h minimum, idéale pour les pros et les camping-caristes.</p>
+        <div class="card-tag">Formation courte</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="16" stroke="#e8c44a" stroke-width="2"/>
+            <path d="M24 14 L24 24 L32 28" stroke="#e8c44a" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="24" cy="24" r="2" fill="#e8c44a"/>
+          </svg>
+        </div>
+        <h3>Conduite Accompagnée</h3>
+        <p>Dès 15 ans, commencez à conduire avec un accompagnateur agréé. Moins de temps d'attente et économies sur la formation.</p>
+        <div class="card-tag">Dès 15 ans</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="why-inner">
+      <div class="label">Pourquoi nous choisir</div>
+      <h2>Une formation <span>qui fait la différence.</span></h2>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-num">01</div>
+          <h4>Moniteurs expérimentés</h4>
+          <p>Tous nos moniteurs sont diplômés d'État avec plus de 5 ans d'expérience.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-num">02</div>
+          <h4>Horaires flexibles</h4>
+          <p>Leçons tôt le matin, le soir et le week-end pour s'adapter à votre emploi du temps.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-num">03</div>
+          <h4>Permis à 1€/jour</h4>
+          <p>Nous sommes agréés pour le permis à 1€/jour, financement accessible à tous.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-num">04</div>
+          <h4>Suivi personnalisé</h4>
+          <p>Bilan régulier et fiche de suivi pour savoir exactement où vous en êtes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <div class="label">Contact</div>
+        <h2>Prenez <span>rendez-vous.</span></h2>
+        <p>Venez nous rencontrer ou contactez-nous directement pour un devis personnalisé.</p>
+        <div class="info-list">
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>12 Rue de la Liberté, 27000 Évreux</span>
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span>02 32 XX XX XX</span>
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div>
+              <div>Lun–Ven : 9h – 19h</div>
+              <div>Sam : 9h – 17h</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Prénom</label>
+            <input type="text" placeholder="Jean" required>
+          </div>
+          <div class="form-group">
+            <label>Nom</label>
+            <input type="text" placeholder="Dupont" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="jean@exemple.fr" required>
+        </div>
+        <div class="form-group">
+          <label>Téléphone</label>
+          <input type="tel" placeholder="06 XX XX XX XX">
+        </div>
+        <div class="form-group">
+          <label>Formation souhaitée</label>
+          <select>
+            <option>Permis B – Manuel</option>
+            <option>Permis B – Automatique</option>
+            <option>Conduite Accompagnée (AAC)</option>
+            <option>Permis Moto A1/A2</option>
+            <option>Permis BE / Remorque</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message (optionnel)</label>
+          <textarea placeholder="Dites-nous en plus sur votre situation..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary full">Envoyer ma demande</button>
+        <div class="form-success" id="success">✅ Demande envoyée ! Nous vous recontactons sous 24h.</div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo">Auto École <strong>Liberté</strong></div>
+    <div class="footer-links">
+      <a href="#">Mentions légales</a>
+      <a href="#">CGV</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-copy">© 2025 Auto École Liberté — Site réalisé par Freddy Boulos</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
